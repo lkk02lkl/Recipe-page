@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 60%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1;
+  background-color: rgb(242, 235, 227);
+}
+
+.container {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.015);
+  max-width: 68rem;
+  background-color: #fff;
+  margin: 2.4rem 1.2rem;
+  padding: 3.2rem;
+}
+
+.product-img {
+  background-image: url(assets/images/image-omelette.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem; 
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+.heading {
+  display: block;
+  font-size: 3.2rem;
+  font-family: Young Serif;
+  color: hsl(24, 5%, 18%);
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+}
+
+.product-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #615f5f;
+  font-family: 'Outfit', sans-serif;
+  
+}
+
+.prep-time-container {
+  margin: 3rem;
+}
+
+.prep-time-container h3 {
+  color: hsl(332, 51%, 32%);
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.prep-time-container ul {
+  margin: 2rem 1.9rem;
+}
+
+.prep-time-container ul li {
+  color: hsl(332, 51%, 32%);
+  font-size: 1.5rem;
+}
+
+.prep-time-container ul li .details{
+  font-weight: 600;
+  margin-left: 1.5rem;
+  line-height: 2;
+  color: rgb(68, 68, 68);
+}
+
+.ingredients-container ul li .text {
+  margin-left: 1.5rem;
+}
+
+.prep-time-container ul li .text,
+.ingredients-container ul li .text,
+.instruction-container ol li .text  {
+  color: #615f5f;
+  font-weight: 400;
+}
+
+.ingredients-container h2, 
+.instruction-container h2,
+.nutrition-container h2 {
+  color: hsl(14, 45%, 36%);
+  display: block;
+  font-size: 2.6rem;
+  font-family: Young Serif;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-weight: 400;
+}
+
+hr {
+  border: 1px solid hsl(30, 18%, 87%);
+}
+
+.ingredients-container ul ,
+.instruction-container ol {
+  color: hsl(14, 45%, 36%);
+  margin: 0 1.9rem 3rem;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.instruction-container ol li {
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  
+}
+
+.nutrition-container p,
+.nutrition-container table tr  {
+  font-size: 1.5rem;
+  color: #615f5f;
+  line-height: 2;
+}
+
+.nutrition-container table tr .kg-calories {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  text-align: left;
+  padding: 1.5rem 3rem;
+}
+
+@media (max-width: 645px) {
+
+  .container {
+    padding: 0;
+  }
+
+  .product-img {
+    background-image: url(assets/images/image-omelette.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    border-radius: 0;
+   
+  }
+
+  .img {
+    width: 100%;
+    display: block;
+  }
+
+  .ingredients-container,
+  .instruction-container,
+  .nutrition-container,
+  .product-desciption {
+    padding: 2.4rem 3rem;;
+  }
+  
+  .heading {
+    font-size: 3rem;
+  }
+  
+  .prep-time-container ul li  {
+   
+    padding-left: 0 0 1rem 2rem ;
+  }
+  
+  .prep-time-container ul li .details {
+    margin: 0;
+  }
+}
